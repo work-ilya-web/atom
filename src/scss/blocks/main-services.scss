@@ -1,0 +1,43 @@
+.main-services {
+	padding-top: 55px;
+	padding-bottom: 103px;
+	&__title {
+		max-width: 784px;
+		margin: 66px auto 87px;
+		position: relative;
+		left: 86px;
+	}
+	&__row {
+		align-items: initial;
+		border-top: 1px solid #151515;
+		padding-top: 60px;
+	}
+	&__coll {
+		width: 25%;
+		max-width: 260px;
+		&-title {
+			letter-spacing: -0.03em;
+			margin-top: 40px;
+			margin-bottom: 38px;
+		}
+	}
+	&__icon {
+		width: 64px;
+		height: 64px;
+	}
+	&__desc {
+		font-size: 15px;
+		line-height: 160%;
+		color: #151515;
+		letter-spacing: 0;
+	}
+	&__link {
+		margin-top: 32px;
+	}
+}
+@media (max-width: 1335px) {
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+}

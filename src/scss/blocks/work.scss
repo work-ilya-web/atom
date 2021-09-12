@@ -1,0 +1,39 @@
+.work {
+	padding-top: 124px;
+	padding-bottom: 105px;
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__left {
+		width: calc(100% - 957px);
+	}
+	&__right {
+		width: 957px;
+		&-top {
+			align-items: flex-start;
+		}
+		&-bottom {
+			max-width: 770px;
+			margin-top: -13px;
+		}
+	}
+	&__line {
+		width: 522px;
+		height: 1.6px;
+		background-color: #151515;
+	}
+	&__img {
+		width: 320px;
+		height: 210px;
+	}
+	&__title {
+		margin-top: 80px;
+	}
+}
+@media (max-width: 1335px) {
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+}
