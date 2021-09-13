@@ -4,9 +4,23 @@
 	&__body {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 120px;
+		&:first-child {
+			margin-bottom: 100px;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 	&__left {
 		width: calc(100% - 957px);
+		&-caption {
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 100%;
+			letter-spacing: 0.01em;
+			margin-bottom: 16px;
+		}
 	}
 	&__right {
 		width: 957px;
@@ -29,6 +43,31 @@
 	}
 	&__title {
 		margin-top: 80px;
+	}
+	&__desc {
+		max-width: 227px;
+		line-height: 140%;
+		color: #8c8c8c;
+	}
+	&__row {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: -40px;
+	}
+	&__coll {
+		width: 25%;
+		justify-content: flex-start;
+		margin-bottom: 40px;
+		&-caption {
+			max-width: calc(100% - 64px);
+			line-height: 100%;
+			color: #4d4d4d;
+		}
+	}
+	&__icon {
+		width: 48px;
+		height: 48px;
+		margin-right: 16px;
 	}
 }
 @media (max-width: 1335px) {

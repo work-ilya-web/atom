@@ -3,7 +3,7 @@
 	max-width: 1600px;
 	margin: 0px auto;
 }
-.site{
+.site {
 	z-index: 2;
 	position: relative;
 	background: #fff;
@@ -12,7 +12,7 @@
 		z-index: 2;
 		position: relative;
 		background: #fff;
-		transform: rotate(-18deg) translate(78%,6%);
+		transform: rotate(-18deg) translate(78%, 6%);
 		max-width: 1600px;
 		margin: 0 auto;
 		transition: 0.3s all;
@@ -20,11 +20,11 @@
 		-moz-transition: 0.3s all;
 		-ms-transition: 0.3s all;
 		-o-transition: 0.3s all;
-		-webkit-transform: rotate(-18deg) translate(78%,6%);
-		-moz-transform: rotate(-18deg) translate(78%,6%);
-		-ms-transform: rotate(-18deg) translate(78%,6%);
-		-o-transform: rotate(-18deg) translate(78%,6%);
-}
+		-webkit-transform: rotate(-18deg) translate(78%, 6%);
+		-moz-transform: rotate(-18deg) translate(78%, 6%);
+		-ms-transform: rotate(-18deg) translate(78%, 6%);
+		-o-transform: rotate(-18deg) translate(78%, 6%);
+	}
 }
 
 .wrapper {
@@ -118,6 +118,11 @@
 	line-height: 122%;
 	letter-spacing: -0.02em;
 	color: #151515;
+	&_big {
+		font-size: 64px;
+		line-height: 94%;
+		letter-spacing: -0.03em;
+	}
 }
 
 .caption {
@@ -148,6 +153,9 @@
 		& * {
 			transition: all 0.3s;
 		}
+	}
+	&--next {
+		margin-left: 12px;
 	}
 	&:hover {
 		svg {
