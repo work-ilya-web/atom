@@ -1,0 +1,32 @@
+.bullits {
+	padding-top: 80px;
+	padding-bottom: 55px;
+	&__row {
+		align-items: initial;
+		flex-wrap: wrap;
+		margin-top: 100px;
+		margin-bottom: -27px;
+	}
+	&__coll {
+		align-items: initial;
+		width: calc(50% - 44px);
+		margin-bottom: 138px;
+	}
+	&__icon {
+		width: 210px;
+	}
+	&__box {
+		max-width: 260px;
+	}
+	&__desc {
+		font-size: 24px;
+		line-height: 142%;
+		margin-top: 32px;
+	}
+}
+@media (max-width: 1335px) {
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+}

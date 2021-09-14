@@ -1,0 +1,42 @@
+.asana {
+	background-color: #f1f1f1;
+	padding: 102px 115px;
+	position: relative;
+	overflow: hidden;
+	&__box {
+		max-width: 410px;
+		font-size: 17px;
+		line-height: 100%;
+		letter-spacing: 0.01em;
+		color: #4d4d4d;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 120%;
+		letter-spacing: 0.01em;
+		color: #151515;
+		margin-top: 32px;
+		margin-bottom: 16px;
+	}
+	&__img {
+		position: absolute;
+		bottom: 0px;
+		&_big {
+			height: 100%;
+			right: 0px;
+			z-index: 10;
+		}
+		&_small {
+			height: 304px;
+			right: 109px;
+			z-index: 5;
+		}
+	}
+}
+@media (max-width: 1335px) {
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+}
