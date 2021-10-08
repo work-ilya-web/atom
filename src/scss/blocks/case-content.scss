@@ -1,0 +1,261 @@
+.case-content {
+	padding-top: 168px;
+	padding-bottom: 85px;
+	&__wrap {
+		& + & {
+			margin-top: 140px;
+		}
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	&__left {
+		width: calc(100% - 1045px);
+	}
+	&__right {
+		width: 1045px;
+	}
+	&__title {
+		max-width: 785px;
+		margin-bottom: 70px;
+	}
+	&__item {
+		border-top: 1.6px solid #4d4d4d;
+		padding: 13px 0px;
+		overflow: hidden;
+		&:last-child {
+			border-bottom: 1.6px solid #4d4d4d;
+		}
+		&:hover {
+			.case-content {
+				&__link {
+					transform: translateX(0px);
+					background-color: #e15d13;
+					transition: all 0.3s;
+					&-icon {
+						svg {
+							path {
+								fill: #fff;
+								transition: all 0.3s;
+							}
+						}
+					}
+					&-caption {
+						opacity: 1;
+						transition: all 0.3s;
+					}
+				}
+			}
+		}
+	}
+	&__name {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 120%;
+		letter-spacing: 0.01em;
+		color: #151515;
+		margin-right: 24px;
+	}
+	&__value {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 15px;
+		line-height: 100%;
+		letter-spacing: 0.006em;
+		color: #151515;
+		padding: 8px 12px;
+		border: 1px solid #dfdfdf;
+		border-radius: 90px;
+	}
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px 12px;
+		transform: translateX(168px);
+		background-color: transparent;
+		border-radius: 90px;
+		transition: all 0.3s;
+		&-icon {
+			width: 16px;
+			height: 16px;
+			svg {
+				& * {
+					transition: all 0.3s;
+				}
+			}
+		}
+		&-caption {
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 100%;
+			letter-spacing: 0.006em;
+			color: #ffffff;
+			margin-left: 10px;
+			opacity: 0;
+			transition: all 0.3s;
+		}
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: -15px;
+	}
+	&__coll {
+		width: 25%;
+		&-value {
+			font-size: 15px;
+			line-height: 140%;
+			letter-spacing: 0.006em;
+			color: #151515;
+		}
+	}
+	&__number {
+		font-weight: 500;
+		font-size: 180px;
+		line-height: 100%;
+		letter-spacing: -0.03em;
+		color: #e15d13;
+	}
+}
+@media (max-width: 1335px) {
+	.case-content {
+		padding-top: 120px;
+		padding-bottom: 80px;
+		&__wrap {
+			& + & {
+				margin-top: 80px;
+			}
+		}
+		&__left {
+			width: calc(100% - 800px);
+		}
+		&__name {
+			font-size: 20px;
+			margin-right: 20px;
+		}
+		&__value {
+			font-size: 13px;
+		}
+		&__right {
+			width: 800px;
+		}
+		&__title {
+			max-width: 675px;
+			margin-bottom: 50px;
+		}
+		&__link {
+			padding: 8px 10px;
+			transform: translateX(0px);
+			background-color: #e15d13;
+			transition: all 0.3s;
+			&-icon {
+				width: 14px;
+				height: 14px;
+				svg {
+					path {
+						fill: #fff;
+						transition: all 0.3s;
+					}
+				}
+			}
+			&-caption {
+				font-size: 13px;
+				opacity: 1;
+				transition: all 0.3s;
+			}
+		}
+		&__coll {
+			width: 33%;
+		}
+		&__number {
+			font-size: 120px;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.case-content {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		&__wrap {
+			& + & {
+				margin-top: 60px;
+			}
+		}
+		&__left {
+			width: 100%;
+		}
+		&__right {
+			margin-top: 15px;
+			width: 100%;
+		}
+		&__title {
+			max-width: 100%;
+			margin-bottom: 25px;
+		}
+		&__item {
+			padding: 10px 0;
+		}
+		&__name {
+			font-size: 18px;
+			margin-right: 15px;
+		}
+		&__value {
+			font-size: 12px;
+		}
+		&__link {
+			&-caption {
+				font-size: 12px;
+			}
+		}
+		&__number {
+			font-size: 100px;
+		}
+		&__row {
+			margin-top: 0px;
+		}
+		&__coll {
+			&-value {
+				font-size: 14px;
+			}
+		}
+	}
+}
+@media (max-width: 760px) {
+	.case-content {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		&__name {
+			font-size: 17px;
+			margin-right: 12px;
+		}
+		&__value {
+			font-size: 11px;
+		}
+		&__link {
+			display: none;
+		}
+		&__number {
+			font-size: 70px;
+		}
+		&__row {
+			flex-wrap: wrap;
+			margin-bottom: -30px;
+		}
+		&__coll {
+			width: 32%;
+			margin-bottom: 30px;
+			&-value {
+				font-size: 13px;
+				white-space: nowrap;
+			}
+		}
+	}
+}
+@media (max-width: 370px) {
+	.case-content {
+		&__coll {
+			width: 50%;
+		}
+	}
+}

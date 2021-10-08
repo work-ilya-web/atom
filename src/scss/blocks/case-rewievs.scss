@@ -1,0 +1,69 @@
+.case-rewievs {
+	margin-top: 60px;
+	&__wrap {
+		padding: 100px 140px;
+		background-color: #f1f1f1;
+	}
+	&__logo {
+		height: 60px;
+		margin-bottom: 15px;
+	}
+	&__desc {
+		max-width: 930px;
+		font-size: 24px;
+		line-height: 140%;
+		letter-spacing: 0px;
+		margin-bottom: 60px;
+	}
+	&__link {
+		display: inline-flex;
+		line-height: 100%;
+		padding-bottom: 12px;
+		border-bottom: 0.6px solid #151515;
+	}
+}
+@media (max-width: 1335px) {
+	.case-rewievs {
+		margin-top: 0;
+		&__wrap {
+			padding: 80px 60px;
+		}
+		&__desc {
+			max-width: 750px;
+			font-size: 22px;
+			margin-bottom: 35px;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.case-rewievs {
+		&__wrap {
+			padding: 50px 20px;
+		}
+		&__logo {
+			height: 50px;
+			margin-bottom: 10px;
+		}
+		&__desc {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.case-rewievs {
+		&__wrap {
+			padding: 30px 15px;
+		}
+		&__logo {
+			height: 40px;
+		}
+		&__desc {
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+		&__link {
+			padding-bottom: 5px;
+		}
+	}
+}

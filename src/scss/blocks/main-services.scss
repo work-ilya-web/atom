@@ -36,8 +36,87 @@
 	}
 }
 @media (max-width: 1335px) {
+	.main-services {
+		padding-top: 50px;
+		padding-bottom: 60px;
+		&__title {
+			max-width: 600px;
+			margin: 40px auto 50px;
+			left: 50px;
+		}
+		&__coll {
+			max-width: 230px;
+			&-title {
+				margin-top: 25px;
+				margin-bottom: 20px;
+			}
+		}
+	}
 }
 @media (max-width: 1010px) {
+	.main-services {
+		&__title {
+			max-width: 450px;
+			margin: 30px auto 30px;
+		}
+		&__row {
+			padding-top: 40px;
+			flex-wrap: wrap;
+			margin-bottom: -35px;
+		}
+		&__coll {
+			width: 50%;
+			max-width: 350px;
+			margin-bottom: 35px;
+			&-title {
+				margin-top: 20px;
+				margin-bottom: 15px;
+			}
+		}
+		&__icon {
+			width: 50px;
+			height: 50px;
+		}
+		&__desc {
+			br {
+				display: none;
+			}
+		}
+		&__link {
+			margin-top: 15px;
+		}
+	}
 }
 @media (max-width: 760px) {
+	.main-services {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		&__title {
+			max-width: 100%;
+			margin: 20px auto 25px;
+			left: 0px;
+		}
+		&__row {
+			padding-top: 30px;
+			margin-bottom: -25px;
+		}
+		&__coll {
+			width: 100%;
+			margin-bottom: 25px;
+			&-title {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
+		&__icon {
+			width: 40px;
+			height: 40px;
+		}
+		&__desc {
+			font-size: 14px;
+		}
+		&__link {
+			margin-top: 5px;
+		}
+	}
 }

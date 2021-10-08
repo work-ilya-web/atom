@@ -26,7 +26,14 @@
 		display: inline-flex;
 		line-height: 100%;
 		padding-bottom: 12px;
+		color: #151515;
 		border-bottom: 0.6px solid #151515;
+		transition: all 0.3s;
+		&:hover {
+			color: #e15d13;
+			border-color: #e15d13;
+			transition: all 0.3s;
+		}
 	}
 	&__bottom {
 		margin-top: 64px;
@@ -51,8 +58,87 @@
 	}
 }
 @media (max-width: 1335px) {
+	.reviews {
+		padding-top: 80px;
+		padding-bottom: 60px;
+		&__slick {
+			margin: 40px -20px 0px;
+		}
+		&__slide {
+			&-item {
+				width: 580px;
+				padding: 35px;
+				background-color: #f1f1f1;
+				margin: 0px 20px;
+			}
+		}
+		&__desc {
+			font-size: 22px;
+			margin-bottom: 35px;
+		}
+		&__bottom {
+			margin-top: 40px;
+		}
+	}
 }
 @media (max-width: 1010px) {
+	.reviews {
+		padding-top: 60px;
+		padding-bottom: 40px;
+		&__logo {
+			height: 50px;
+			margin-bottom: 10px;
+		}
+		&__slick {
+			margin: 30px -10px 0px;
+		}
+		&__slide {
+			&-item {
+				width: 500px;
+				padding: 40px 25px;
+				margin: 0px 10px;
+			}
+		}
+		&__desc {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+		&__bottom {
+			margin-top: 30px;
+		}
+	}
 }
 @media (max-width: 760px) {
+	.reviews {
+		padding-top: 40px;
+		&__logo {
+			height: 40px;
+		}
+		&__body {
+			width: 100%;
+		}
+		&__slick {
+			margin: 20px -5px 0px;
+		}
+		&__slide {
+			&-item {
+				width: calc(100% - 10px);
+				padding: 30px 15px;
+				margin: 0px 5px;
+			}
+		}
+		&__desc {
+			font-size: 17px;
+			margin-bottom: 15px;
+		}
+		&__link {
+			padding-bottom: 5px;
+		}
+		&__bottom {
+			margin-top: 20px;
+		}
+		&__arrows {
+			padding-right: 15px;
+		}
+	}
 }

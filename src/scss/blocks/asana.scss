@@ -9,6 +9,8 @@
 		line-height: 100%;
 		letter-spacing: 0.01em;
 		color: #4d4d4d;
+		position: relative;
+		z-index: 100;
 	}
 	&__title {
 		font-weight: 500;
@@ -35,8 +37,63 @@
 	}
 }
 @media (max-width: 1335px) {
+	.asana {
+		padding: 80px 50px;
+		&__box {
+			max-width: 340px;
+			font-size: 16px;
+		}
+		&__title {
+			font-size: 21px;
+			margin-top: 20px;
+			margin-bottom: 15px;
+		}
+		&__img {
+			right: -5%;
+			&_small {
+				height: 250px;
+				right: -2%;
+				z-index: 5;
+			}
+		}
+	}
 }
 @media (max-width: 1010px) {
+	.asana {
+		padding: 60px 25px;
+		&__box {
+			max-width: 320px;
+			font-size: 15px;
+		}
+		&__title {
+			font-size: 19px;
+		}
+		&__img {
+			right: -30%;
+			&_small {
+				height: 200px;
+				right: -30%;
+			}
+		}
+	}
 }
 @media (max-width: 760px) {
+	.asana {
+		padding: 35px 15px;
+		&__box {
+			font-size: 14px;
+		}
+		&__title {
+			margin-top: 15px;
+		}
+		&__img {
+			right: -100%;
+			bottom: 30px;
+			&_small {
+				height: 200px;
+				right: -96%;
+				bottom: 0px;
+			}
+		}
+	}
 }

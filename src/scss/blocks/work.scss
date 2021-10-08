@@ -24,6 +24,7 @@
 	}
 	&__right {
 		width: 957px;
+		position: relative;
 		&-top {
 			align-items: flex-start;
 		}
@@ -40,6 +41,9 @@
 	&__img {
 		width: 320px;
 		height: 210px;
+		img {
+			display: block;
+		}
 	}
 	&__title {
 		margin-top: 80px;
@@ -71,8 +75,118 @@
 	}
 }
 @media (max-width: 1335px) {
+	.work {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		&__body {
+			margin-bottom: 80px;
+		}
+		&__left {
+			width: calc(100% - 700px);
+		}
+		&__right {
+			width: 680px;
+		}
+		&__line {
+			width: calc(100% - 300px);
+		}
+		&__img {
+			width: 280px;
+			height: 180px;
+		}
+		&__title {
+			margin-top: 40px;
+		}
+		&__row {
+			margin-bottom: -20px;
+		}
+		&__coll {
+			margin-bottom: 20px;
+			&-caption {
+				max-width: calc(100% - 55px);
+				font-size: 13px;
+			}
+		}
+		&__icon {
+			width: 40px;
+			height: 40px;
+			margin-right: 10px;
+		}
+	}
 }
 @media (max-width: 1010px) {
+	.work {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		&__body {
+			margin-bottom: 40px;
+			flex-wrap: wrap;
+			&:first-child {
+				margin-bottom: 40px;
+			}
+		}
+		&__left {
+			width: 100%;
+		}
+		&__right {
+			width: 100%;
+			margin-top: 20px;
+		}
+		&__title {
+			margin-top: 20px;
+			max-width: 410px;
+		}
+		&__desc {
+			max-width: 280px;
+		}
+	}
 }
 @media (max-width: 760px) {
+	.work {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		&__body {
+			margin-bottom: 40px;
+			&:first-child {
+				margin-bottom: 20px;
+			}
+		}
+		&__left {
+			width: 100%;
+			&-caption {
+				margin-bottom: 0;
+			}
+		}
+		&__right {
+			margin-top: 15px;
+			&-bottom {
+				margin-top: -15px;
+			}
+		}
+		&__line {
+			width: calc(100% - 255px);
+		}
+		&__img {
+			width: 240px;
+			height: 160px;
+		}
+		&__title {
+			margin-top: 15px;
+		}
+		&__row {
+			margin-bottom: -10px;
+		}
+		&__coll {
+			width: 50%;
+			margin-bottom: 10px;
+		}
+		&__icon {
+			width: 35px;
+			height: 35px;
+		}
+		&__desc {
+			max-width: 280px;
+			margin-top: 15px;
+		}
+	}
 }

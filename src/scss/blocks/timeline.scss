@@ -10,6 +10,10 @@
 	&__bg {
 		width: 100%;
 		height: 100%;
+		overflow: hidden;
+	}
+	&__line {
+		height: 100%;
 	}
 	&__row {
 		position: absolute;
@@ -32,6 +36,7 @@
 			line-height: 100%;
 			letter-spacing: 0.01em;
 			color: #ffffff;
+			transition: all 0.3s;
 		}
 		&-value {
 			display: inline-flex;
@@ -88,11 +93,233 @@
 			bottom: 106px;
 			left: 174px;
 		}
+		&:hover {
+			.timeline {
+				&__coll {
+					&-box {
+						background-color: #151515;
+						transition: all 0.3s;
+					}
+				}
+				&__hidden {
+					transform: translateY(0px);
+					visibility: visible;
+					opacity: 1;
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
+	&__hidden {
+		position: absolute;
+		right: 0px;
+		bottom: calc(100% + 10px);
+		padding: 28px;
+		width: 369px;
+		background-color: #151515;
+		border-radius: 8px;
+		transform: translateY(10px);
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.3s;
+		&-caption {
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 126%;
+			letter-spacing: 0.01em;
+			color: #ffffff;
+			margin-bottom: 10px;
+		}
+		&-desc {
+			font-size: 15px;
+			line-height: 140%;
+			letter-spacing: 0.006em;
+			color: #ffffff;
+		}
 	}
 }
 @media (max-width: 1335px) {
+	.timeline {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		&__body {
+			margin-top: 40px;
+			height: 600px;
+		}
+		&__coll {
+			&-box {
+				padding: 8px 15px;
+				font-size: 15px;
+			}
+			&-value {
+				font-size: 14px;
+				padding: 7px 10px;
+			}
+			&_1 {
+				width: 300px;
+				top: 10px;
+			}
+			&_2 {
+				width: 360px;
+				top: 90px;
+				left: 65px;
+			}
+			&_3 {
+				width: 400px;
+				top: 168px;
+				left: 130px;
+			}
+			&_4 {
+				width: 460px;
+				top: 245px;
+				left: 195px;
+			}
+			&_5 {
+				width: 270px;
+				top: 320px;
+				left: 385px;
+			}
+			&_6 {
+				width: 270px;
+				top: 395px;
+				left: 515px;
+			}
+			&_7 {
+				width: 270px;
+				bottom: 85px;
+				right: 65px;
+			}
+			&_8 {
+				width: 270px;
+				bottom: 10px;
+			}
+			&_9 {
+				width: 495px;
+				bottom: 85px;
+				left: 92px;
+			}
+		}
+		&__hidden {
+			padding: 15px;
+			width: 300px;
+			&-caption {
+				font-size: 16px;
+			}
+			&-desc {
+				font-size: 14px;
+			}
+		}
+	}
 }
 @media (max-width: 1010px) {
+	.timeline {
+		&__bg {
+			display: none;
+		}
+		&__body {
+			margin-top: 15px;
+			height: auto;
+		}
+		&__row {
+			position: relative;
+		}
+		&__coll {
+			& + & {
+				margin-top: 20px;
+			}
+			background-color: #b8b8b8;
+			position: relative;
+			border-radius: 6px;
+			overflow: hidden;
+			&:nth-child(2n) {
+				background-color: #151515;
+			}
+			&-box {
+				background-color: transparent;
+				padding: 8px 15px;
+				font-size: 15px;
+			}
+			&-value {
+				font-size: 14px;
+				padding: 7px 10px;
+			}
+			&_1 {
+				width: 100%;
+				top: 0px;
+			}
+			&_2 {
+				width: 100%;
+				top: 0px;
+				left: 0px;
+			}
+			&_3 {
+				width: 100%;
+				top: 0px;
+				left: 0px;
+			}
+			&_4 {
+				width: 100%;
+				top: 0px;
+				left: 0px;
+			}
+			&_5 {
+				width: 100%;
+				top: 0px;
+				left: 0px;
+			}
+			&_6 {
+				width: 100%;
+				top: 0px;
+				left: 0px;
+			}
+			&_7 {
+				width: 100%;
+				bottom: 0px;
+				right: 0px;
+			}
+			&_8 {
+				width: 100%;
+				bottom: 0px;
+			}
+			&_9 {
+				width: 100%;
+				bottom: 0px;
+				left: 0px;
+			}
+		}
+		&__hidden {
+			background-color: transparent;
+			width: 100%;
+			position: relative;
+			transform: translateY(0px);
+			visibility: visible;
+			opacity: 1;
+			right: 0;
+			bottom: 0;
+			padding-top: 0;
+		}
+	}
 }
 @media (max-width: 760px) {
+	.timeline {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		&__body {
+			margin-top: 20px;
+		}
+		&__coll {
+			&-caption {
+				max-width: calc(100% - 100px);
+			}
+			&-value {
+				font-size: 12px;
+			}
+		}
+		&__hidden {
+			padding-top: 10px;
+			&-caption {
+				font-size: 15px;
+			}
+		}
+	}
 }
