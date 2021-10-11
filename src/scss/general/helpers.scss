@@ -53,6 +53,11 @@
 	object-fit: contain;
 }
 
+.left,
+.right {
+	opacity: 1;
+}
+
 .btn {
 	font-family: "GraphikLCG", sans-serif;
 	display: inline-flex;

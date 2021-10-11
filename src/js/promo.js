@@ -9,3 +9,4 @@ $('.promo__slick').slick({
 	autoplay: true,
 	autoplaySpeed: 2000,
 });
+
