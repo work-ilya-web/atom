@@ -281,24 +281,31 @@ color: 'header--light'
 		</div>
 
 		<div class="services">
+			<div class="cursor">
+				<div class="cursor__img"></div>
+			</div>
 			<div class="wrapper">
 				<div class="services__title caption" data-delay=".4">К нам обращаются чтобы разработать</div>
 				<div class="services__items">
-					<div class="services__item flex" data-img="img/services/img.jpg" data-delay=".6">
+					<div class="services__item flex p-1" data-img="img/services/img.jpg" data-delay=".6">
 						<div class="services__caption">Landing page</div>
 						<div class="services__value">Смотреть работы <span>(4)</span></div>
+						<div class="project-overlay"></div>
 					</div>
-					<div class="services__item flex" data-img="img/services/img.jpg" data-delay=".7">
+					<div class="services__item flex p-2" data-img="img/services/icon-1.jpg" data-delay=".7">
 						<div class="services__caption">Корпоративные сайты</div>
 						<div class="services__value">Смотреть работы <span>(8)</span></div>
+						<div class="project-overlay"></div>
 					</div>
-					<div class="services__item flex" data-img="img/services/img.jpg" data-delay=".8">
+					<div class="services__item flex p-3" data-img="img/services/icon-2.jpg" data-delay=".8">
 						<div class="services__caption">Интернет-магазины</div>
 						<div class="services__value">Смотреть работы <span>(11)</span></div>
+						<div class="project-overlay"></div>
 					</div>
-					<div class="services__item flex" data-img="img/services/img.jpg" data-delay=".9">
+					<div class="services__item flex p-4" data-img="img/services/icon-3.jpg" data-delay=".9">
 						<div class="services__caption">Сервисы и админки </div>
 						<div class="services__value">Смотреть работы <span>(253)</span></div>
+						<div class="project-overlay"></div>
 					</div>
 				</div>
 			</div>
@@ -708,7 +715,7 @@ color: 'header--light'
 						</div>
 						<div class="portfolio__left-row">
 							<div class="portfolio__box portfolio__box_big">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/left/icon-1.jpg" alt="">
 									</a>
@@ -719,10 +726,10 @@ color: 'header--light'
 										<div class="portfolio__item">testing</div>
 										<div class="portfolio__item">support</div>
 									</div>
-								</div>
+								</section>
 							</div>
 							<div class="portfolio__box portfolio__box_small">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/left/icon-2.jpg" alt="">
 									</a>
@@ -733,10 +740,10 @@ color: 'header--light'
 										<div class="portfolio__item">testing</div>
 										<div class="portfolio__item">support</div>
 									</div>
-								</div>
+								</section>
 							</div>
 							<div class="portfolio__box portfolio__box_big">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/left/icon-3.jpg" alt="">
 									</a>
@@ -747,7 +754,7 @@ color: 'header--light'
 										<div class="portfolio__item">testing</div>
 										<div class="portfolio__item">support</div>
 									</div>
-								</div>
+								</section>
 							</div>
 						</div>
 					</div>
@@ -755,7 +762,7 @@ color: 'header--light'
 						<div class="caption" data-delay=".2">Посмотрите<br> реализованные нами проекты</div>
 						<div class="portfolio__right-row">
 							<div class="portfolio__right-box">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/right/icon-1.jpg" alt="">
 									</a>
@@ -766,10 +773,10 @@ color: 'header--light'
 										<div class="portfolio__item">testing</div>
 										<div class="portfolio__item">support</div>
 									</div>
-								</div>
+								</section>
 							</div>
 							<div class="portfolio__right-box">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/right/icon-2.jpg" alt="">
 									</a>
@@ -779,10 +786,10 @@ color: 'header--light'
 										<div class="portfolio__item">frontend</div>
 										<div class="portfolio__item">testing</div>
 									</div>
-								</div>
+								</section>
 							</div>
 							<div class="portfolio__right-box">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/right/icon-3.jpg" alt="">
 									</a>
@@ -792,10 +799,10 @@ color: 'header--light'
 										<div class="portfolio__item">frontend</div>
 										<div class="portfolio__item">testing</div>
 									</div>
-								</div>
+								</section>
 							</div>
 							<div class="portfolio__right-box">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/right/icon-4.jpg" alt="">
 									</a>
@@ -806,7 +813,7 @@ color: 'header--light'
 										<div class="portfolio__item">testing</div>
 										<div class="portfolio__item">support</div>
 									</div>
-								</div>
+								</section>
 							</div>
 						</div>
 					</div>
@@ -971,7 +978,7 @@ color: 'header--light'
 							</div>
 							<div class="reviews__desc">Вообще не понял зачем немецкому пиву Японские нотки! Так себе
 								лагер, на один раз...</div>
-							<a href="#" class="reviews__link reviews--js">Читать продолжение</a>
+							<div class="reviews__link reviews--js">Читать продолжение</div>
 						</div>
 					</div>
 					<div class="reviews__slide">
@@ -1026,7 +1033,7 @@ color: 'header--light'
 							</div>
 							<div class="reviews__desc">Натуральнейший вкус сливочного пломбира + много-много вкусного
 								вишнёвого джема ...</div>
-							<a href="#" class="reviews__link reviews--js">Читать продолжение</a>
+							<div class="reviews__link reviews--js">Читать продолжение</div>
 						</div>
 					</div>
 					<div class="reviews__slide">
@@ -1075,7 +1082,7 @@ color: 'header--light'
 							</div>
 							<div class="reviews__desc">Вообще не понял зачем немецкому пиву Японские нотки! Так себе
 								лагер, на один раз...</div>
-							<a href="#" class="reviews__link reviews--js">Читать продолжение</a>
+							<div class="reviews__link reviews--js">Читать продолжение</div>
 						</div>
 					</div>
 					<div class="reviews__slide">
@@ -1130,7 +1137,7 @@ color: 'header--light'
 							</div>
 							<div class="reviews__desc">Натуральнейший вкус сливочного пломбира + много-много вкусного
 								вишнёвого джема ...</div>
-							<a href="#" class="reviews__link reviews--js">Читать продолжение</a>
+							<div class="reviews__link reviews--js">Читать продолжение</div>
 						</div>
 					</div>
 				</div>
@@ -1449,7 +1456,7 @@ color: 'header--light'
 							</label>
 							<label class="form__label">
 								<div class="form__caption">Телефон</div>
-								<input type="text" class="form__field field" placeholder="">
+								<input type="text" class="form__field field phone-mask" placeholder="">
 							</label>
 							<label class="form__label">
 								<div class="form__caption">Сообщение</div>
@@ -1458,7 +1465,7 @@ color: 'header--light'
 						</div>
 						<div class="form__bottom">
 							<button class="form__btn">Отправить</button>
-							<div class="form__aggrement">Заполняя форму, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a>, включая использование файлов cookie.</div>
+							<div class="form__aggrement">Заполняя форму, вы соглашаетесь с нашей <a href="#" class="privacy--js">Политикой конфиденциальности</a>, включая использование файлов cookie.</div>
 						</div>
 					</form>
 				</div>
@@ -1484,8 +1491,8 @@ color: 'header--light'
 
 </div>
 
-@@include('inc/modal.html')
-
 @@include('inc/page-footer.html')
+
+@@include('inc/modal.html')
 
 @@include('inc/doc-end.html')

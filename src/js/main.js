@@ -56,3 +56,4 @@ function animateFrom(elem, direction, delay, scale) {
 		opacity: 0,
 	});
 }, 200);
+

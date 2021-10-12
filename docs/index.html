@@ -3,9 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <title>Full–stack разработка</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="format-detection" content="address=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+    <meta property="og:site_name" content="Macrutin">
+    <meta property="og:title" content="Macrutin">
+    <meta property="og:description" content="Macrutin–шторы на заказ">
+    <meta property="og:url" content="http://artrepin.studio/projects/macurtin/">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="http://artrepin.studio/projects/macurtin/img/avatar.png">
+    <meta property="og:image:width" content="250">
+    <meta property="og:image:height" content="250">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
@@ -36,6 +46,14 @@
             <li><a href="#">atom@gmail.com</a></li>
           </ul>
         </div>
+		<a href="#" class="menu__download">
+			<div class="menu__download-icon flex-center">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3 19H21V21H3V19ZM13 13.172L19.071 7.1L20.485 8.514L12 17L3.515 8.515L4.929 7.1L11 13.17V2H13V13.172Z" fill="white"/>
+				</svg>
+			</div>
+			<div class="menu__download-caption">Пример коммерческого предложения</div>
+		</a>
     </div>
     <div class="menu-close close-menu--js">       
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -349,24 +367,31 @@
 		</div>
 
 		<div class="services">
+			<div class="cursor">
+				<div class="cursor__img"></div>
+			</div>
 			<div class="wrapper">
 				<div class="services__title caption" data-delay=".4">К нам обращаются чтобы разработать</div>
 				<div class="services__items">
-					<div class="services__item flex" data-img="img/services/img.jpg" data-delay=".6">
+					<div class="services__item flex p-1" data-img="img/services/img.jpg" data-delay=".6">
 						<div class="services__caption">Landing page</div>
 						<div class="services__value">Смотреть работы <span>(4)</span></div>
+						<div class="project-overlay"></div>
 					</div>
-					<div class="services__item flex" data-img="img/services/img.jpg" data-delay=".7">
+					<div class="services__item flex p-2" data-img="img/services/icon-1.jpg" data-delay=".7">
 						<div class="services__caption">Корпоративные сайты</div>
 						<div class="services__value">Смотреть работы <span>(8)</span></div>
+						<div class="project-overlay"></div>
 					</div>
-					<div class="services__item flex" data-img="img/services/img.jpg" data-delay=".8">
+					<div class="services__item flex p-3" data-img="img/services/icon-2.jpg" data-delay=".8">
 						<div class="services__caption">Интернет-магазины</div>
 						<div class="services__value">Смотреть работы <span>(11)</span></div>
+						<div class="project-overlay"></div>
 					</div>
-					<div class="services__item flex" data-img="img/services/img.jpg" data-delay=".9">
+					<div class="services__item flex p-4" data-img="img/services/icon-3.jpg" data-delay=".9">
 						<div class="services__caption">Сервисы и админки </div>
 						<div class="services__value">Смотреть работы <span>(253)</span></div>
+						<div class="project-overlay"></div>
 					</div>
 				</div>
 			</div>
@@ -776,7 +801,7 @@
 						</div>
 						<div class="portfolio__left-row">
 							<div class="portfolio__box portfolio__box_big">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/left/icon-1.jpg" alt="">
 									</a>
@@ -787,10 +812,10 @@
 										<div class="portfolio__item">testing</div>
 										<div class="portfolio__item">support</div>
 									</div>
-								</div>
+								</section>
 							</div>
 							<div class="portfolio__box portfolio__box_small">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/left/icon-2.jpg" alt="">
 									</a>
@@ -801,10 +826,10 @@
 										<div class="portfolio__item">testing</div>
 										<div class="portfolio__item">support</div>
 									</div>
-								</div>
+								</section>
 							</div>
 							<div class="portfolio__box portfolio__box_big">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/left/icon-3.jpg" alt="">
 									</a>
@@ -815,7 +840,7 @@
 										<div class="portfolio__item">testing</div>
 										<div class="portfolio__item">support</div>
 									</div>
-								</div>
+								</section>
 							</div>
 						</div>
 					</div>
@@ -823,7 +848,7 @@
 						<div class="caption" data-delay=".2">Посмотрите<br> реализованные нами проекты</div>
 						<div class="portfolio__right-row">
 							<div class="portfolio__right-box">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/right/icon-1.jpg" alt="">
 									</a>
@@ -834,10 +859,10 @@
 										<div class="portfolio__item">testing</div>
 										<div class="portfolio__item">support</div>
 									</div>
-								</div>
+								</section>
 							</div>
 							<div class="portfolio__right-box">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/right/icon-2.jpg" alt="">
 									</a>
@@ -847,10 +872,10 @@
 										<div class="portfolio__item">frontend</div>
 										<div class="portfolio__item">testing</div>
 									</div>
-								</div>
+								</section>
 							</div>
 							<div class="portfolio__right-box">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/right/icon-3.jpg" alt="">
 									</a>
@@ -860,10 +885,10 @@
 										<div class="portfolio__item">frontend</div>
 										<div class="portfolio__item">testing</div>
 									</div>
-								</div>
+								</section>
 							</div>
 							<div class="portfolio__right-box">
-								<div class="portfolio__card">
+								<section class="portfolio__card">
 									<a href="#" class="portfolio__img img-cover">
 										<img src="img/portfolio/right/icon-4.jpg" alt="">
 									</a>
@@ -874,7 +899,7 @@
 										<div class="portfolio__item">testing</div>
 										<div class="portfolio__item">support</div>
 									</div>
-								</div>
+								</section>
 							</div>
 						</div>
 					</div>
@@ -1039,7 +1064,7 @@
 							</div>
 							<div class="reviews__desc">Вообще не понял зачем немецкому пиву Японские нотки! Так себе
 								лагер, на один раз...</div>
-							<a href="#" class="reviews__link reviews--js">Читать продолжение</a>
+							<div class="reviews__link reviews--js">Читать продолжение</div>
 						</div>
 					</div>
 					<div class="reviews__slide">
@@ -1094,7 +1119,7 @@
 							</div>
 							<div class="reviews__desc">Натуральнейший вкус сливочного пломбира + много-много вкусного
 								вишнёвого джема ...</div>
-							<a href="#" class="reviews__link reviews--js">Читать продолжение</a>
+							<div class="reviews__link reviews--js">Читать продолжение</div>
 						</div>
 					</div>
 					<div class="reviews__slide">
@@ -1143,7 +1168,7 @@
 							</div>
 							<div class="reviews__desc">Вообще не понял зачем немецкому пиву Японские нотки! Так себе
 								лагер, на один раз...</div>
-							<a href="#" class="reviews__link reviews--js">Читать продолжение</a>
+							<div class="reviews__link reviews--js">Читать продолжение</div>
 						</div>
 					</div>
 					<div class="reviews__slide">
@@ -1198,7 +1223,7 @@
 							</div>
 							<div class="reviews__desc">Натуральнейший вкус сливочного пломбира + много-много вкусного
 								вишнёвого джема ...</div>
-							<a href="#" class="reviews__link reviews--js">Читать продолжение</a>
+							<div class="reviews__link reviews--js">Читать продолжение</div>
 						</div>
 					</div>
 				</div>
@@ -1517,7 +1542,7 @@
 							</label>
 							<label class="form__label">
 								<div class="form__caption">Телефон</div>
-								<input type="text" class="form__field field" placeholder="">
+								<input type="text" class="form__field field phone-mask" placeholder="">
 							</label>
 							<label class="form__label">
 								<div class="form__caption">Сообщение</div>
@@ -1526,7 +1551,7 @@
 						</div>
 						<div class="form__bottom">
 							<button class="form__btn">Отправить</button>
-							<div class="form__aggrement">Заполняя форму, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a>, включая использование файлов cookie.</div>
+							<div class="form__aggrement">Заполняя форму, вы соглашаетесь с нашей <a href="#" class="privacy--js">Политикой конфиденциальности</a>, включая использование файлов cookie.</div>
 						</div>
 					</form>
 				</div>
@@ -1552,7 +1577,55 @@
 
 </div>
 
-<div id="reviews-modal" class="reviews-modal modal" style="display: none;">
+<footer class="footer">
+	<div class="wrapper">
+		<div class="footer__top flex">
+			<div class="footer__logo">
+				<img src="img/footer/logo.svg" alt="">
+			</div>
+			<nav class="footer__menu">
+				<ul>
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Услуги</a>
+					</li>
+					<li>
+						<a href="#">Технологии</a>
+					</li>
+					<li>
+						<a href="#">Портфолио</a>
+					</li>
+					<li>
+						<a href="#">Клиенты</a>
+					</li>
+					<li>
+						<a href="#">Преимущества</a>
+					</li>
+					<li>
+						<a href="#">Отзывы</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="footer__bottom flex">
+			<a href="#" class="footer__copiright">Atom © 2013–2021</a>
+			<div class="footer__last flex">
+				<div class="footer__confidentiality privacy--js">Политика конфиденциальности</div>
+				<a href="#" class="footer__developer flex">
+					<div class="footer__developer-caption">Design by</div>
+					<div class="footer__developer-logo">
+						<img src="img/footer/developer.svg" alt="">
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<div id="reviews-modal" class="reviews-modal modal">
 	<div class="modal__body">
 		<div class="modal__wrap">
 			<div class="modal__close flex-center" data-fancybox-close>
@@ -1592,53 +1665,189 @@
 	</div>
 </div><!-- end reviews-modal -->
 
-<footer class="footer">
-	<div class="wrapper">
-		<div class="footer__top flex">
-			<div class="footer__logo">
-				<img src="img/footer/logo.svg" alt="">
+<div id="privacy-policy" class="privacy-policy modal">
+	<div class="modal__body">
+		<div class="modal__wrap">
+			<div class="modal__close flex-center" data-fancybox-close>
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M16.0029 17.414L23.2949 24.708L24.7109 23.294L17.4169 16L24.7109 8.70799L23.2969 7.29199L16.0029 14.586L8.71087 7.29199L7.29688 8.70799L14.5889 16L7.29688 23.292L8.71087 24.708L16.0029 17.414Z" fill="#F1F1F1"/>
+				</svg>
 			</div>
-			<nav class="footer__menu">
-				<ul>
-					<li>
-						<a href="#">Главная</a>
-					</li>
-					<li>
-						<a href="#">Услуги</a>
-					</li>
-					<li>
-						<a href="#">Технологии</a>
-					</li>
-					<li>
-						<a href="#">Портфолио</a>
-					</li>
-					<li>
-						<a href="#">Клиенты</a>
-					</li>
-					<li>
-						<a href="#">Преимущества</a>
-					</li>
-					<li>
-						<a href="#">Отзывы</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<div class="footer__bottom flex">
-			<div class="footer__copiright">Atom © 2013–2021</div>
-			<div class="footer__last flex">
-				<div class="footer__confidentiality">Политика конфиденциальности</div>
-				<a href="#" class="footer__developer flex">
-					<div class="footer__developer-caption">Design by</div>
-					<div class="footer__developer-logo">
-						<img src="img/footer/developer.svg" alt="">
+			<div class="modal__content dragscroll">
+				<div class="wrapper">
+					<div class="privacy-policy__article">
+						<h1>Privacy policy & Terms of use</h1>
+						<p>Настоящая Политика конфиденциальности персональных данных (далее — Политика конфиденциальности) действует
+							в отношении всей информации, которую компания Macrutin, расположенная на доменном
+							имени <a href="https://macurtin.ru/">https://macurtin.ru/</a>, может получить о Пользователе во
+							время
+							использования им сайта компании, предоставляющего услуги по продаже товаров и оказанию услуг.</p>
+						<h4>1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</h4>
+						<p>1.1. В Политике конфиденциальности используются следующие термины:</p>
+						<p>1.1.1. Администрация сайта компании Macrutin (далее Администрация сайта) уполномоченные сотрудники
+							на управление сайтом, действующие от имени ИП., которые организуют и (или) осуществляют
+							обработку персональных данных, а также определяют цели обработки персональных данных, состав
+							персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.</p>
+						<p>1.1.2. Персональные данные любая информация, относящаяся прямо или косвенно к определенному или
+							определяемому физическому лицу (субъекту персональных данных).</p>
+						<p>1.1.3. Обработка персональных данных любое действие (операция) или совокупность действий (операций),
+							совершаемых с использованием средств автоматизации или без использования таких средств с персональными
+							данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение),
+							извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание,
+							блокирование, удаление, уничтожение персональных данных.</p>
+						<p>1.1.4. Конфиденциальность персональных данных - обязательное для соблюдения Оператором или иным
+							получившим доступ к персональным данным лицом требование не допускать их распространения без согласия
+							субъекта персональных данных или наличия иного законного основания.</p>
+						<p>1.1.5. Пользователь сайта компании Macrutin (далее Пользователь) лицо, имеющее доступ к сайту
+							посредством сети Интернет и использующее сайт компании Macrutin.</p>
+						<p>1.1.6. Cookies небольшой фрагмент данных, отправленный веб-сервером и хранимый на компьютере
+							пользователя, веб-клиент или веб-браузер которого каждый раз пересылает веб-серверу в НТТР-запросе при
+							попытке открыть страницу соответствующего сайта.</p>
+						<p>1.1.7. IP-адрес уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу IP.</p>
+						<h4>2. ОБЩИЕ ПОЛОЖЕНИЯ</h4>
+						<p>2.1. Использование Пользователем сайта компании Macrutin означает согласие с Политикой
+							конфиденциальности и условиями обработки персональных данных Пользователя.</p>
+						<p>2.2. В случае несогласия с условиями Политики конфиденциальности Пользователь должен прекратить
+							использование сайта <a href="https://macurtin.ru/">https://macurtin.ru/</a>.</p>
+						<p>2.3. Политика конфиденциальности применяется только к сайту компании Macrutin. Компания Giulia
+							Novars не контролирует и не несет ответственности за сайты третьих лиц, на которые Пользователь может
+							перейти по ссылкам на сайте <a href="https://macurtin.ru/">https://macurtin.ru/</a>.</p>
+						<p>2.4. Администрация сайта не проверяет достоверность персональных данных, предоставляемых Пользователем
+							сайта компании Macrutin.</p>
+						<h4>3. ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ</h4>
+						<p>3.1. Политика конфиденциальности устанавливает обязательства Администрации сайта <a
+								href="https://macurtin.ru/">https://macurtin.ru/</a> по неразглашению и обеспечению режима
+							защиты
+							конфиденциальности персональных данных, которые Пользователь предоставляет по запросу Администрации
+							сайта при регистрации на сайте компании Macrutin или для приобретения услуг компании Macrutin.
+						</p>
+						<p>3.2. Персональные данные, разрешенные к обработке в рамках Политики конфиденциальности, предоставляются
+							Пользователем путем заполнения регистрационной формы в различных разделах сайта <a
+								href="https://macurtin.ru/">https://macurtin.ru/</a> и включают в себя следующую информацию:
+						</p>
+						<p>3.2.1. Фамилию, имя, отчество Пользователя;</p>
+						<p>3.2.2. Контактный номер телефона Пользователя;</p>
+						<p>3.2.3. Адрес электронной почты (e-mail).</p>
+						<p>3.3. Компания Macrutin защищает данные, которые автоматически передаются в процессе просмотра
+							рекламных блоков и при посещении страниц, на которых установлен статистический скрипт системы пиксель:
+						</p>
+						<ul>
+							<li>
+								IP-адрес;
+							</li>
+							<li>
+								информация из Cookies;
+							</li>
+							<li>
+								информация о браузере (или иной программе, которая осуществляет доступ к показу рекламы);
+							</li>
+							<li>
+								время доступа;
+							</li>
+							<li>
+								адрес страницы, на которой расположен рекламный блок;
+							</li>
+							<li>
+								реферер (адрес предыдущей страницы).
+							</li>
+						</ul>
+						<p>3.3.1. Отключение Cookies может повлечь невозможность доступа к частям сайта <a
+								href="https://macurtin.ru/">https://macurtin.ru/</a> требующим авторизации.</p>
+						<p>3.3.2. Сайт <a href="https://macurtin.ru/">https://macurtin.ru/</a> осуществляет сбор статистики
+							об
+							IP-адресах своих посетителей. Данная информация используется с целью выявления и решения технических
+							проблем, для контроля законности проводимых финансовых платежей.</p>
+						<p>3.4. Любая иная персональная информация, не оговоренная выше (история обращений, используемые браузеры и
+							операционные системы и т.д.), подлежат надежному хранению, за исключением случаев, предусмотренных в
+							п.п. 5.2. и 5.3. Политики конфиденциальности.</p>
+						<h4>4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНЫХ ДАННЫХ ПОЛЬЗОВАТЕЛЯ</h4>
+						<p>4.1. Персональные данные Пользователя Администрация сайта <a
+								href="https://macurtin.ru/">https://macurtin.ru/</a> может использовать в целях:</p>
+						<p>4.1.1. Идентификации Пользователя, зарегистрированного на сайте <a
+								href="https://macurtin.ru/">https://macurtin.ru/</a> для оказания услуг ИП.</p>
+						<p>4.1.2. Предоставления Пользователю доступа к персонализированным ресурсам сайта компании Macrutin.
+						</p>
+						<p>4.1.3. Установления с Пользователем обратной связи, включая направление уведомлений, запросов, касающихся
+							сайта компании Macrutin, оказания услуг для Пользователя.</p>
+						<p>4.1.4. Определения места нахождения Пользователя для обеспечения безопасности, предотвращения
+							мошенничества.</p>
+						<p>4.1.5. Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.</p>
+						<p>4.1.6. Осуществления рекламной деятельности с согласия Пользователя.</p>
+						<h4>5. СПОСОБЫ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h4>
+						<p>5.1. Обработка персональных данных Пользователя осуществляется без ограничения срока, любым законным
+							способом, в том числе в информационных системах персональных данных с использованием средств
+							автоматизации или без использования таких средств.</p>
+						<p>5.2. Пользователь соглашается с тем, что Администрация сайта вправе передавать персональные данные
+							третьим лицам исключительно в целях оказания услуг Пользователю, оформленных на сайте <a
+								href="https://macurtin.ru/">https://macurtin.ru/</a>.</p>
+						<p>5.3. Персональные данные Пользователя могут быть переданы уполномоченным органам государственной власти
+							Российской Федерации только по основаниям и в порядке, установленном законодательством Российской
+							Федерации.</p>
+						<p>5.4. При утрате или разглашении персональных данных, Администрация сайта информирует Пользователя об
+							утрате или разглашении персональных данных.</p>
+						<p>5.5. Администрация сайта принимает необходимые организационные и технические меры для защиты персональных
+							данных Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования,
+							копирования, распространения, а также от иных неправомерных действий третьих лиц.</p>
+						<p>5.6. Администрация сайта совместно с Пользователем принимает все необходимые меры по предотвращению
+							убытков или иных отрицательных последствий, вызванных утратой или разглашением персональных данных
+							Пользователя.</p>
+						<h4>6. ОБЯЗАТЕЛЬСТВА СТОРОН</h4>
+						<p>6.1. Пользователь обязан:</p>
+						<p>6.1.1. Предоставить информацию о персональных данных, необходимую для пользования сайтом компании Giulia
+							Novars.</p>
+						<p>6.2. Администрация сайта обязана:</p>
+						<p>6.2.1. Использовать полученную информацию исключительно для целей, указанных в п. 4. Политики
+							конфиденциальности.</p>
+						<p>6.2.2. Обеспечить хранение персональных данных Пользователя втайне, не разглашать без предварительного
+							письменного разрешения Пользователя, а также не осуществлять продажу, обмен, опубликование либо
+							разглашение иными возможными способами переданных персональных данных Пользователя, за исключением п.п.
+							5.2. и 5.3. Политики конфиденциальности.</p>
+						<p>6.2.3. Принимать меры предосторожности для защиты конфиденциальности персональных данных Пользователя
+							согласно порядку, обычно используемому для защиты такого рода информации в существующем деловом обороте.
+						</p>
+						<p>6.2.4. Осуществить блокирование персональных данных, относящихся к соответствующему Пользователю, с
+							момента обращения или запроса Пользователя или его законного представителя либо уполномоченного органа
+							по защите прав субъекта персональных данных на период проверки, в случае выявления недостоверных
+							персональных данных или неправомерных действий.</p>
+						<h4>7. ОТВЕТСТВЕННОСТЬ СТОРОН</h4>
+						<p>7.1. Администрация сайта, не исполнившая свои обязательства, несет ответственность за убытки, понесенные
+							Пользователем в связи с неправомерным использованием персональных данных, в соответствии с
+							законодательством Российской Федерации, за исключением случаев, предусмотренных п.п. 5.2., 5.3. и 7.2.
+							Политики конфиденциальности.</p>
+						<p>7.2. В случае утраты или разглашения персональных данных Пользователя, Администрация сайта не несет
+							ответственности, если персональные данные:</p>
+						<p>7.2.1. Стали публичным достоянием до их утраты или разглашения.</p>
+						<p>7.2.2. Были получены от третьей стороны до момента их получения Администрацией сайта.</p>
+						<p>7.2.3. Были разглашены с согласия Пользователя.</p>
+						<h4>8. РАЗРЕШЕНИЕ СПОРОВ</h4>
+						<p>8.1. До обращения в суд с иском по спорам, возникающим из отношений между Пользователем сайта <a
+								href="https://macurtin.ru/">https://macurtin.ru/</a> и Администрацией сайта, обязательным
+							является
+							предъявление претензии (письменного предложения о добровольном урегулировании спора).</p>
+						<p>8.2. Получатель претензии в течение 30 (тридцати) календарных дней со дня получения претензии письменно
+							уведомляет заявителя претензии о результатах рассмотрения претензии.</p>
+						<p>8.3. При недостижении соглашения спор будет передан на рассмотрение в судебный орган в соответствии с
+							действующим законодательством Российской Федерации.</p>
+						<p>8.4. К Политике конфиденциальности и отношениям между Пользователем и Администрацией сайта применяется
+							действующее законодательство Российской Федерации.</p>
+						<h4>9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</h4>
+						<p>9.1. Администрация сайта вправе вносить изменения в Политику конфиденциальности без согласия
+							Пользователя.</p>
+						<p>9.2. Новая Политика конфиденциальности вступает в силу с момента ее размещения на сайте <a
+								href="https://macurtin.ru/">https://macurtin.ru/</a>, если иное не предусмотрено новой
+							редакцией
+							Политики конфиденциальности.</p>
+						<p>9.3. Все предложения или вопросы по Политике конфиденциальности следует сообщать электронным письмом по
+							адресу <a href="mailto:info@macurtin.ru ">info@macurtin.ru </a>.</p>
+						<p>9.4. Действующая политика конфиденциальности размещена на странице по адресу: <a
+								href="https://macurtin.ru/">https://macurtin.ru/</a>.</p>
+						<p>Размещено: 15 сентября 2020 года.</p>
 					</div>
-				</a>
+				</div>
 			</div>
 		</div>
 	</div>
-</footer>
-
+</div><!-- end privacy-policy -->
 
       </div>
     </div>

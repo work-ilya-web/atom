@@ -1,8 +1,20 @@
 .modal {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	visibility: hidden;
+	opacity: 0;
 	background: transparent;
 	padding: 0;
 	vertical-align: middle;
 	overflow: hidden;
+	z-index: 10000;
+	transition: all 0.3s;
+	&.visible {
+		visibility: visible;
+		opacity: 1;
+		transition: all 0.3s;
+	}
 	&__body {
 		display: flex;
 		justify-content: flex-end;
@@ -12,6 +24,12 @@
 		background-color: #151515;
 		position: relative;
 		padding: 60px 35px 60px 60px;
+		transform: translateX(110%);
+		transition: all 0.3s;
+		&.visible {
+			transform: translateX(0%);
+			transition: all 0.3s;
+		}
 	}
 	&__content {
 		height: calc(100vh - 120px);

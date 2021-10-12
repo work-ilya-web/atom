@@ -7,6 +7,49 @@
 	height: 100vh;
 	z-index: 1;
 	padding: 110px 144px;
+	&__download {
+		position: absolute;
+		bottom: 50px;
+		left: 144px;
+		display: inline-flex;
+		align-items: center;
+		&-icon {
+			width: 72px;
+			height: 72px;
+			background-color: #e15d13;
+			border-radius: 50%;
+			margin-right: 30px;
+			transition: all 0.3s;
+			svg {
+				& * {
+					transition: all 0.3s;
+				}
+			}
+		}
+		&-caption {
+			width: 195px;
+			font-size: 15px;
+			line-height: 140%;
+			letter-spacing: 0.006em;
+			color: #b8b8b8;
+		}
+		&:hover {
+			.menu {
+				&__download {
+					&-icon {
+						background-color: #fff;
+						transition: all 0.3s;
+						svg {
+							& * {
+								fill: #e15d13;
+								transition: all 0.3s;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 .menu__main {
 	margin-bottom: 80px;
@@ -53,6 +96,19 @@
 @media (max-width: 1600px) {
 	.menu {
 		padding: 100px 80px;
+		&__download {
+			bottom: 30px;
+			left: 80px;
+			&-icon {
+				width: 60px;
+				height: 60px;
+				margin-right: 30px;
+			}
+			&-caption {
+				width: 195px;
+				font-size: 15px;
+			}
+		}
 	}
 }
 @media (max-width: 1335px) {
@@ -77,6 +133,19 @@
 						font-size: 16px;
 					}
 				}
+			}
+		}
+		&__download {
+			bottom: 25px;
+			left: 40px;
+			&-icon {
+				width: 50px;
+				height: 50px;
+				margin-right: 20px;
+			}
+			&-caption {
+				width: 195px;
+				font-size: 14px;
 			}
 		}
 	}
@@ -136,6 +205,10 @@
 					}
 				}
 			}
+		}
+		&__download {
+			bottom: 15px;
+			left: 15px;
 		}
 	}
 }

@@ -16,10 +16,17 @@
 		margin-bottom: 60px;
 	}
 	&__link {
+		cursor: pointer;
 		display: inline-flex;
 		line-height: 100%;
 		padding-bottom: 12px;
 		border-bottom: 0.6px solid #151515;
+		transition: all 0.3s;
+		&:hover {
+			color: #e15d13;
+			border-color: #e15d13;
+			transition: all 0.3s;
+		}
 	}
 }
 @media (max-width: 1335px) {

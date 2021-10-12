@@ -79,6 +79,11 @@
 		a {
 			color: #8c8c8c;
 			text-decoration: underline;
+			transition: color 0.3s;
+			&:hover {
+				color: #e15d13;
+				transition: color 0.3s;
+			}
 		}
 	}
 }
@@ -96,6 +101,10 @@ textarea.form__field {
 			font-size: 16px;
 			line-height: 16px;
 			top: 20px;
+			&.active {
+				top: -10px;
+				transition: all 0.3s;
+			}
 		}
 		&__label {
 			margin-bottom: 20px;
@@ -119,7 +128,7 @@ textarea.form__field {
 			top: 9px;
 		}
 		&__label {
-			margin-bottom: 15px;
+			margin-bottom: 25px;
 			&_small {
 				width: 100%;
 			}

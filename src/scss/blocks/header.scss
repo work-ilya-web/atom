@@ -26,9 +26,14 @@
 			li {
 				a {
 					color: #151515;
+					transition: color 0.3s;
 					span {
 						color: #b8b8b8;
 						margin-left: 8px;
+					}
+					&:hover {
+						color: #e15d13;
+						transition: color 0.3s;
 					}
 				}
 			}
@@ -38,6 +43,11 @@
 		display: inline-block;
 		text-decoration-line: underline;
 		color: #151515;
+		transition: color 0.3s;
+		&:hover {
+			color: #e15d13;
+			transition: color 0.3s;
+		}
 	}
 	&__burger {
 		width: 41px;
@@ -48,6 +58,8 @@
 		flex-wrap: wrap;
 		align-content: center;
 		margin-left: 48px;
+		cursor: pointer;
+		transition: background 0.3s;
 		span + span {
 			margin-top: 6px;
 		}
@@ -56,6 +68,10 @@
 			width: 15px;
 			height: 2px;
 			background-color: #ffffff;
+		}
+		&:hover {
+			background-color: #4d4d4d;
+			transition: background 0.3s;
 		}
 	}
 	&--dark {
@@ -66,8 +82,13 @@
 					li {
 						a {
 							color: #ffffff;
+							transition: color 0.3s;
 							span {
 								color: #b8b8b8;
+							}
+							&:hover {
+								color: #e15d13;
+								transition: color 0.3s;
 							}
 						}
 					}
@@ -75,11 +96,21 @@
 			}
 			&__link {
 				color: #ffffff;
+				transition: color 0.3s;
+				&:hover {
+					color: #e15d13;
+					transition: color 0.3s;
+				}
 			}
 			&__burger {
 				background-color: #ffffff;
+				transition: background 0.3s;
 				span {
 					background-color: #151515;
+				}
+				&:hover {
+					background-color: #4d4d4d;
+					transition: background 0.3s;
 				}
 			}
 		}

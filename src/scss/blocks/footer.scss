@@ -17,6 +17,11 @@
 					line-height: 100%;
 					letter-spacing: 0.006em;
 					color: #8c8c8c;
+					transition: color 0.3s;
+					&:hover {
+						color: #e15d13;
+						transition: color 0.3s;
+					}
 				}
 			}
 		}
@@ -29,6 +34,14 @@
 		color: #8c8c8c;
 		a {
 			color: #8c8c8c;
+		}
+	}
+	&__confidentiality {
+		display: inline-flex;
+		transition: color 0.3s;
+		&:hover {
+			color: #e15d13;
+			transition: color 0.3s;
 		}
 	}
 	&__developer {
